@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Closure;
 
 
-class VerifyTokenSSO
+abstract class VerifyTokenSSO
 {
     protected $serviceToken;
 

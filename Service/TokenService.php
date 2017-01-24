@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\Session;
 
-class TokenService
+abstract class TokenService
 {
     protected $accessToken;
     protected $user;
