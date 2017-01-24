@@ -2,10 +2,10 @@
     "name": "vallovera/vitta-token",
     "description": "Services validate token Vitta SSO",
     "license": "MIT",
-    "version": "master",
     "require": {
-        "laravel/framework": "5.*",
-         "phpunit/phpunit": "5.5.*",
+         "laravel/framework": "5.*"
+    },
+    "require-dev": {
         "league/oauth2-client": "^1.4"
     },
     "authors": [
