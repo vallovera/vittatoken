@@ -3,8 +3,7 @@
     "description": "Services validate token Vitta SSO",
     "license": "MIT",
     "require": {
-        "laravel/framework": "5.*",
-
+        "laravel/framework": "5.*"
     },
     "require-dev": {
         "phpunit/phpunit": "5.5.*",
