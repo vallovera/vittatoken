@@ -1,11 +1,11 @@
 
 
-Primeiramente instale via composer:
+##Primeiramente instale via composer:##
 
 composer require vallovera/vitta-token
 
 
-Feito isso, adicione a seguinte linha no Kernel.php que está localizado no app/Http/Kernel.php
+##Feito isso, adicione a seguinte linha no Kernel.php que está localizado no## app/Http/Kernel.php
 
 Escolha o prefixo que deseja ser coberto pelo token e insira:
 
@@ -23,7 +23,7 @@ Exemplo utilizando prefixo 'api':
 
 
 
-Pronto sua verificação de token e middleware já estão funcionando corretamente,
+##Pronto sua verificação de token e middleware já estão funcionando corretamente##
 
 Verifique se as variaveis do .env abaixo encontran-se na aplicação:
 
