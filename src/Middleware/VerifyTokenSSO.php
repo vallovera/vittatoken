@@ -47,15 +47,12 @@ class VerifyTokenSSO
      */
     public function handle($request, Closure $next)
     {
-        if (is_null($request->header('token'))) {
-            if (is_null($request->token)) {
-                 abort(401);
-            } else {
-                 $jsonDecode = json_decode($request->token);
-            }
-        } else {
-            $jsonDecode = json_decode($request->header('token'));
+        if (is_null($request->header('token')) && is_null($request->token)) {
+            abort(401);
         }
+
+        $jsonDecode = ($request->header('token')) ?
+            json_decode($request->header('token')) : json_decode($request->token);
 
         if (!is_object($jsonDecode)) {
             abort(401);
