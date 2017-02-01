@@ -89,7 +89,11 @@ abstract class TokenServiceAbstract
 
             $user = $resposta->user;
 
-            Session::put('user_auth', (array)$user);
+             $temSessao =session('user_auth');
+
+            if (!$temSessao) {
+                Session::put('user_auth', (array)$user);
+            }
 
             return $user;
         } catch (RequestException $e) {
